@@ -1,3 +1,5 @@
+'use strict';
+
 var likesDirtBiking = prompt('Do you like dirt biking?');
 
 likesDirtBiking = likesDirtBiking.toUpperCase();
