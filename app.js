@@ -29,3 +29,17 @@ if(likesTraveling === 'YES') {
 } else {
   alert('Traveling can be pricey and time consuming.');
 }
+
+
+
+var likesDogs = prompt('Do you like dogs?');
+
+likesDogs = likesDogs.toUpperCase();
+
+if(likesDogs === 'YES') {
+  alert('Dogs are amazing good choice.');
+} else {
+  alert('There always has to be one cat person lol.');
+}
+
+
