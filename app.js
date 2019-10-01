@@ -20,3 +20,12 @@ if(likesLearningNewThings === 'YES') {
 
 
 
+var likesTraveling = prompt('Do you like to travel?');
+
+likesTraveling = likesTraveling.toUpperCase();
+
+if(likesTraveling === 'YES') {
+  alert('Traveling is an amzing experience and I\'m glad you have had the chance.');
+} else {
+  alert('Traveling can be pricey and time consuming.');
+}
