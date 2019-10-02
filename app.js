@@ -1,21 +1,32 @@
 'use strict';
 
+var userName = prompt('What\'s your name?');
+alert('Hello  ' + userName + ' Welcome to my about me page, I\'ll be asking a series of questions on your journey! Good Luck ');
+
+
+
 var likesDirtBiking = prompt('Do you like dirt biking?');
+console.log('likesDirtBiking:' + likesDirtBiking);
+
+
 
 likesDirtBiking = likesDirtBiking.toUpperCase();
 
 if (likesDirtBiking === 'YES') {
-  alert('Cool so do I.');
+  alert('Me too I\'ve dirt biked ever since I was a little kid.');
 } else {
-  alert('That is okay');
+  alert('That\'s okay, I really like doing anything.');
 }
 
 var likesLearningNewThings = prompt('Do you like learning new things?');
+console.log('likesLearningNewThings:' + likesLearningNewThings);
+
+
 
 likesLearningNewThings = likesLearningNewThings.toUpperCase();
 
 if (likesLearningNewThings === 'YES') {
-  alert('That\'s awesome so do I, learning gives us the ability to make a difference in a world thank is constantly changing');
+  alert('That\'s awesome so do I, learning gives us the ability to make a difference in a world thank is constantly changing. Be proud at you willingness to learn and process new things.');
 } else {
   alert('That\'s okay it\'s not meant for everybody.');
 }
@@ -23,36 +34,43 @@ if (likesLearningNewThings === 'YES') {
 
 
 var likesTraveling = prompt('Do you like to travel?');
+console.log('likesTraveling:' + likesTraveling);
+
 
 likesTraveling = likesTraveling.toUpperCase();
 
 if (likesTraveling === 'YES') {
-  alert('Traveling is an amazing experience and I\'m glad you have had the chance.');
+  alert('Traveling gives amazing experiences, my favorite place is northern Greenland');
 } else {
-  alert('Traveling can be pricey and time consuming.');
+  alert('Traveling can be pricey and time consuming, I also adventure in around Washington as well want to know of any cool places slack me.');
 }
 
 
 
 var likesDogs = prompt('Do you like dogs?');
+console.log('likesDogs:' + likesDogs);
+
+
 
 likesDogs = likesDogs.toUpperCase();
 
 if (likesDogs === 'YES') {
-  alert('Dogs are amazing good choice.');
+  alert('Me too, I have two dogs a Belgian Malinois and a Pit Bull mix rescue.');
 } else {
-  alert('There always has to be one cat person lol.');
+  alert('There always has to be one cat person lol, kidding I\'m and animal lover no matter what I just prefer dogs.');
 }
 
 
 var WearsGlasses = prompt('Do I wear glasses?');
+console.log('WearsGlasses:' + WearsGlasses);
+
 
 WearsGlasses = WearsGlasses.toUpperCase();
 
 if (WearsGlasses === 'YES') {
-  alert('You\'re right');
+  alert('You\'re right, my eyesight started going bad last year, now it\'s mandatory I have to wear them, atleast that\'s what the dmv said.');
 } else {
-  alert('You\'re wrong!');
+  alert('Incorrect better luck next time.');
 }
 
-alert('Thank you for answering my questions, enjoy my about me.');
+alert('Thank you for answering my questions, enjoy my about me ' +userName+ ' ! ');
