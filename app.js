@@ -12,7 +12,7 @@ console.log('likesDirtBiking:' + likesDirtBiking);
 
 likesDirtBiking = likesDirtBiking.toUpperCase();
 
-if (likesDirtBiking === 'YES') {
+if (likesDirtBiking === 'YES' || likesDirtBiking === 'Y') {
   alert('Me too I\'ve dirt biked ever since I was a little kid.');
 } else {
   alert('That\'s okay, I really like doing anything.');
@@ -25,7 +25,7 @@ console.log('likesLearningNewThings:' + likesLearningNewThings);
 
 likesLearningNewThings = likesLearningNewThings.toUpperCase();
 
-if (likesLearningNewThings === 'YES') {
+if (likesLearningNewThings === 'YES' || likesLearningNewThings === 'Y') {
   alert('That\'s awesome so do I, learning gives us the ability to make a difference in a world thank is constantly changing. Be proud at you willingness to learn and process new things.');
 } else {
   alert('That\'s okay it\'s not meant for everybody.');
@@ -39,7 +39,7 @@ console.log('likesTraveling:' + likesTraveling);
 
 likesTraveling = likesTraveling.toUpperCase();
 
-if (likesTraveling === 'YES') {
+if (likesTraveling === 'YES' || likesTraveling === 'Y') {
   alert('Traveling gives amazing experiences, my favorite place is northern Greenland');
 } else {
   alert('Traveling can be pricey and time consuming, I also adventure in around Washington as well want to know of any cool places slack me.');
@@ -54,7 +54,7 @@ console.log('likesDogs:' + likesDogs);
 
 likesDogs = likesDogs.toUpperCase();
 
-if (likesDogs === 'YES') {
+if (likesDogs === 'YES' || likesDogs === 'Y') {
   alert('Me too, I have two dogs a Belgian Malinois and a Pit Bull mix rescue.');
 } else {
   alert('There always has to be one cat person lol, kidding I\'m and animal lover no matter what I just prefer dogs.');
@@ -67,7 +67,7 @@ console.log('WearsGlasses:' + WearsGlasses);
 
 WearsGlasses = WearsGlasses.toUpperCase();
 
-if (WearsGlasses === 'YES') {
+if (WearsGlasses === 'YES' || WearsGlasses === 'Y') {
   alert('You\'re right, my eyesight started going bad last year, now it\'s mandatory I have to wear them, atleast that\'s what the dmv said.');
 } else {
   alert('Incorrect better luck next time.');
