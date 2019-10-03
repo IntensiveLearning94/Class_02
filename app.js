@@ -10,15 +10,19 @@ alert('Hello  ' + userName + ' Welcome to my about me page, I\'ll be asking a se
 var likesDirtBiking = prompt('Do I like dirt biking?');
 // console.log('likesDirtBiking:' + likesDirtBiking);
 
-
 likesDirtBiking = likesDirtBiking.toUpperCase();
-
 if (likesDirtBiking === 'YES' || likesDirtBiking === 'Y') {
   alert('Yes, I\'ve dirt biked ever since I was a little kid.');
   myScore += 1;
 } else if (likesDirtBiking === 'NO') {
-  alert('That\'s okay, I really like doing anything.');
+  alert('Wrong answer.');
+} else {
+  alert( 'please respond with a yes or a no!');
 }
+// for (var likesDirtBiking = yes; likesDirtBiking < 4; likesDirtBiking++);
+// four guesses create a loop similar to above!
+
+
 
 var likesLearningNewThings = prompt('Do I like learning new things?');
 // console.log('likesLearningNewThings:' + likesLearningNewThings);
@@ -66,24 +70,24 @@ if (likesDogs === 'YES' || likesDogs === 'Y') {
 }
 
 
-var WearsGlasses = prompt('Do I wear glasses?');
+var wearsGlasses = prompt('Do I wear glasses?');
 // console.log('WearsGlasses:' + WearsGlasses);
 
 
-WearsGlasses = WearsGlasses.toUpperCase();
+wearsGlasses = wearsGlasses.toUpperCase();
 
-if (WearsGlasses === 'YES' || WearsGlasses === 'Y') {
+if (wearsGlasses === 'YES' || wearsGlasses === 'Y') {
   alert('You\'re right, my eyesight started going bad last year, now it\'s mandatory I have to wear them, atleast that\'s what the dmv said.');
-  myScore += 1;
-} else if (WearsGlasses === 'NO' || WearsGlasses === 'N'); {
+
+//   myScore += 1;
+} else if (wearsGlasses === 'NO' || wearsGlasses === 'N'); {
   alert('Incorrect better luck next time.');
 }
 
 
 alert('Guess a number 0-10, you will have 3 attempts');
 
-
-for (var i = 0; i < 4; i++) {
+for (var i = 0; i < 5; i++) {
 
   var correctNumber = 6;
   var attempt = parseInt(prompt('Pick a Number!'));
@@ -98,18 +102,21 @@ for (var i = 0; i < 4; i++) {
 
   } else if (correctNumber > attempt);
   alert('To low please try again!');
-
 }
 
-var guess = prompt ('flavor');
+var guess = prompt('What\'s my favorite flavored icecream?');
 
-var iceCream = ['chocolate', 'vanilla', 'strawberry','mint',];
+guess = guess.toLowerCase;
 
-for (var j = 0; j < iceCream.length; j++)
-  if(iceCream[j] == guess){
-    console.log('Marched icecream');
-    break;
+var iceCream = ['chocolate', 'vanilla', 'strawberry', 'mint',];
+
+for (var j = 0; j < iceCream.length; j++){
+
+  if (iceCream[j] === guess) {
+    console.log('Matched icecream');
+    myScore += 1;
+    // break;
   }
-
+}
 
 alert('Thank you for answering my questions' + userName + ',' + 'Your score is! ' + myScore);
