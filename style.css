@@ -4,10 +4,21 @@ body {background-color: burlywood}
 
 
 h2 {text-align: center}
-h2 {margin-bottom: 2%}
+h2 {margin-bottom: 25px}
 h2 {font-size: 225%}
+h2 { margin-top: 25px}
 
 p {margin-left: 5%}
 p {margin-right: 5%}
 p { font-size: 125%}
 p {text-indent: .5in}
+/* p {margin-bottom: 25px} */
+p {margin-top: 25px}
+
+li { margin-left: 40%}
+li {margin-right: 5%}
+li {font-size: 125%}
+/* li {margin-bottom: 25px} */
+/* li {margin-top: 25px} */
+
+

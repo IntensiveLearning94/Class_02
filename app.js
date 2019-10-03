@@ -1,23 +1,26 @@
 'use strict';
 
+var myScore = 0;
+
 var userName = prompt('What\'s your name?');
 alert('Hello  ' + userName + ' Welcome to my about me page, I\'ll be asking a series of questions on your journey! Good Luck ');
 
 
 
-var likesDirtBiking = prompt('Do you like dirt biking?');
+var likesDirtBiking = prompt('Do I like dirt biking?');
 // console.log('likesDirtBiking:' + likesDirtBiking);
 
 
 likesDirtBiking = likesDirtBiking.toUpperCase();
 
 if (likesDirtBiking === 'YES' || likesDirtBiking === 'Y') {
-  alert('Me too I\'ve dirt biked ever since I was a little kid.');
-} else if(likesDirtBiking === 'NO'){
+  alert('Yes, I\'ve dirt biked ever since I was a little kid.');
+  myScore += 1;
+} else if (likesDirtBiking === 'NO') {
   alert('That\'s okay, I really like doing anything.');
 }
 
-var likesLearningNewThings = prompt('Do you like learning new things?');
+var likesLearningNewThings = prompt('Do I like learning new things?');
 // console.log('likesLearningNewThings:' + likesLearningNewThings);
 
 
@@ -25,38 +28,41 @@ var likesLearningNewThings = prompt('Do you like learning new things?');
 likesLearningNewThings = likesLearningNewThings.toUpperCase();
 
 if (likesLearningNewThings === 'YES' || likesLearningNewThings === 'Y') {
-  alert('That\'s awesome so do I, learning gives us the ability to make a difference in a world thank is constantly changing. Be proud at you willingness to learn and process new things.');
-} else if(likesLearningNewThings === 'NO' || likesLearningNewThings === 'N') {
-  alert('That\'s okay it\'s not meant for everybody.');
+  alert('Yes, learning gives us the ability to make a difference in a world thank is constantly changing. Be proud at you willingness to learn and process new things.');
+  myScore += 1;
+} else if (likesLearningNewThings === 'NO' || likesLearningNewThings === 'N') {
+  alert('Wrong, it\'s okay this game isn\'t meant for everybody.');
 }
 
 
 
-var likesTraveling = prompt('Do you like to travel?');
+var likesTraveling = prompt('Do I like to travel?');
 // console.log('likesTraveling:' + likesTraveling);
 
 
 likesTraveling = likesTraveling.toUpperCase();
 
 if (likesTraveling === 'YES' || likesTraveling === 'Y') {
-  alert('Traveling gives amazing experiences, my favorite place is northern Greenland');
+  alert('Yes, Traveling has given me amazing experiences, my favorite place is northern Greenland');
+  myScore += 1;
 } else if (likesTraveling === 'NO' || likesTraveling === 'N') {
-  alert('Traveling can be pricey and time consuming, I also adventure in around Washington as well want to know of any cool places slack me.');
+  alert('Ummmmmmm Wrong!!!!');
 }
 
 
 
-var likesDogs = prompt('Do you like dogs?');
+var likesDogs = prompt('Do I like dogs?');
 // console.log('likesDogs:' + likesDogs);
 
 
 
 likesDogs = likesDogs.toUpperCase();
 
-if (likesDogs === 'YES' || likesDogs === 'Y' ) {
-  alert('Me too, I have two dogs a Belgian Malinois and a Pit Bull mix rescue.');
-} else if(likesDogs === 'NO' || likesDogs === 'N') {
-  alert('There always has to be one cat person lol, kidding I\'m and animal lover no matter what I just prefer dogs.');
+if (likesDogs === 'YES' || likesDogs === 'Y') {
+  alert('Heck Yeah, I have two dogs a Belgian Malinois and a Pit Bull mix rescue.');
+  myScore += 1;
+} else if (likesDogs === 'NO' || likesDogs === 'N') {
+  alert('You are incorrect! better luck next time.');
 }
 
 
@@ -66,11 +72,34 @@ var WearsGlasses = prompt('Do I wear glasses?');
 
 WearsGlasses = WearsGlasses.toUpperCase();
 
-if (WearsGlasses === 'YES') {
+if (WearsGlasses === 'YES' || WearsGlasses === 'Y') {
   alert('You\'re right, my eyesight started going bad last year, now it\'s mandatory I have to wear them, atleast that\'s what the dmv said.');
+  myScore += 1;
 } else if (WearsGlasses === 'NO' || WearsGlasses === 'N'); {
   alert('Incorrect better luck next time.');
 }
 
-alert('Thank you for answering my questions, enjoy my about me ' +userName+ ' ! ');
 
+alert('Guess a number 0-10, you will have 3 attempts');
+
+
+for (var i = 0; i < 4; i++) {
+
+  var correctNumber = 6;
+  var attempt = parseInt( prompt('Pick a Number!') );
+
+  if (correctNumber === attempt) {
+    alert('Lucky guess lol, you got it right!');
+    break;
+
+  } else if (correctNumber < attempt) {
+    alert('To high please try again!');
+
+  } else if (correctNumber > attempt);
+  alert('To low please try again!');
+
+}
+
+
+
+alert( 'Thank you for answering my questions' + userName + ',' + 'Your score is! ' + myScore);
