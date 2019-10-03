@@ -86,10 +86,11 @@ alert('Guess a number 0-10, you will have 3 attempts');
 for (var i = 0; i < 4; i++) {
 
   var correctNumber = 6;
-  var attempt = parseInt( prompt('Pick a Number!') );
+  var attempt = parseInt(prompt('Pick a Number!'));
 
   if (correctNumber === attempt) {
     alert('Lucky guess lol, you got it right!');
+    myScore += 1;
     break;
 
   } else if (correctNumber < attempt) {
@@ -100,6 +101,15 @@ for (var i = 0; i < 4; i++) {
 
 }
 
+var guess = prompt ('flavor');
+
+var iceCream = ['chocolate', 'vanilla', 'strawberry','mint',];
+
+for (var j = 0; j < iceCream.length; j++)
+  if(iceCream[j] == guess){
+    console.log('Marched icecream');
+    break;
+  }
 
 
-alert( 'Thank you for answering my questions' + userName + ',' + 'Your score is! ' + myScore);
+alert('Thank you for answering my questions' + userName + ',' + 'Your score is! ' + myScore);
