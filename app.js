@@ -133,4 +133,5 @@ function faveFlave() {
 }
 faveFlave();
 
-alert('Thank you for answering my questions' + userName + ',' + 'Your score is! ' + myScore);
+alert('Thank you for answering my questions' + userName + ',' + 'Your score is! ' + myScore + ' out of 7.' );
+
